@@ -11,4 +11,9 @@ class StudentsController < ApplicationController
   def new
   end
 
+  def create
+    student = Student.create(params)
+    redirect_to @show
+  end
+
 end
